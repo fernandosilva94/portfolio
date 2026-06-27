@@ -1,9 +1,11 @@
+const base = import.meta.env.BASE_URL
+
 export default function Hero() {
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url('/img/bg-webdev.jpg')" }}
+      style={{ backgroundImage: `url('${base}img/bg-webdev.jpg')` }}
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 text-center px-4 max-w-3xl">

@@ -1,12 +1,14 @@
 import type { Project } from '../types'
 
+const base = import.meta.env.BASE_URL
+
 const projects: Project[] = [
   {
     title: 'StockControl',
     description:
       'Aplicação de controle de estoque desenvolvida com Angular 15 e TypeScript. Gerencia produtos, quantidades e movimentações de entrada e saída.',
     technologies: ['Angular', 'TypeScript', 'SCSS'],
-    image: '/img/github_logo.png',
+    image: `${base}img/github_logo.png`,
     github: 'https://github.com/fernandosilva94/stock-control',
   },
   {
@@ -14,7 +16,7 @@ const projects: Project[] = [
     description:
       'Aplicação meteorológica que consome API de clima em tempo real, desenvolvida com Angular 15, TypeScript e SCSS.',
     technologies: ['Angular', 'TypeScript', 'SCSS', 'API REST'],
-    image: '/img/github_logo.png',
+    image: `${base}img/github_logo.png`,
     github: 'https://github.com/fernandosilva94/weather-app',
   },
   {
@@ -22,7 +24,7 @@ const projects: Project[] = [
     description:
       'Site responsivo MobileFirst para uma empresa de arquitetura. Utiliza HTML, CSS e Bootstrap com design moderno e adaptável.',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
-    image: '/img/projTopCasaFina.png',
+    image: `${base}img/projTopCasaFina.png`,
     github: 'https://github.com/fernandosilva94/knowledge_in_Bootstrap',
   },
   {
@@ -30,7 +32,7 @@ const projects: Project[] = [
     description:
       'Aplicação web para consulta de informações nutricionais. Utiliza JavaScript com AJAX para requisições assíncronas e tratamento de erros.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'AJAX'],
-    image: '/img/projPacientesNutricao.png',
+    image: `${base}img/projPacientesNutricao.png`,
     github: 'https://github.com/fernandosilva94/knowledge_in_js',
   },
   {
@@ -38,7 +40,7 @@ const projects: Project[] = [
     description:
       'Página institucional para uma barbearia, criada com HTML e CSS. Foco em estilização e estruturação semântica de tags.',
     technologies: ['HTML', 'CSS'],
-    image: '/img/projBarbearia.png',
+    image: `${base}img/projBarbearia.png`,
     github: 'https://github.com/fernandosilva94/scope_site_html_css',
   },
 ]
